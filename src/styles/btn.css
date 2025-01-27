@@ -1,0 +1,53 @@
+.buttonContainer {
+  margin: auto;
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.innerContent div {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.submitBtn {
+  background-color: rgb(7, 36, 7);
+}
+
+.submitBtn:hover {
+  background-color: rgb(6, 77, 6);
+  transition: background-color ease-in-out 0.15s, transition ease-in-out 0.15s;
+  transform: scale(0.9);
+}
+
+.editBtn {
+  background-color: rgb(13, 13, 154);
+}
+
+.editBtn:hover {
+  background-color: rgb(68, 68, 244);
+  transition: background-color ease-in-out 0.15s, transform 0.15s ease-in-out;
+  transform: scale(0.9);
+}
