@@ -7,6 +7,8 @@ import GeneralInfo from "./component/GeneralInfo";
 function App() {
   return (
     <>
+      <h2>CV APPLICATION FORM</h2>
+
       <GeneralInfo />
       <Education />
       <Experience />
