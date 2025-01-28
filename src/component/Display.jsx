@@ -1,15 +1,25 @@
 import { useLocation } from "react-router-dom";
-
+import "../styles/display.css";
 function Display() {
-  const { state: formData } = useLocation(); // Get form data from navigation state
+  const { state: formData } = useLocation();
 
   return (
-    <div>
-      <h2>Submitted Data</h2>
-      <p>First Name: {formData.firstName}</p>
-      <p>Last Name: {formData.lastName}</p>
-      <p>Email: {formData.email}</p>
-      <p>Phone: {formData.phone}</p>
+    <div className="displayContainer">
+      <div className="HeaderCont">
+        <h2>Submitted Data</h2>
+      </div>
+
+      <div className="HeaderBar">
+        <div className="headerInfo">
+          <p>{formData.firstName}</p>
+          <p>{formData.lastName}</p>
+        </div>
+
+        <div className="otherHeaderInfo">
+          <p>Email: {formData.email}</p>
+          <p>Phone: {formData.phone}</p>
+        </div>
+      </div>
       <p>School: {formData.school}</p>
       <p>Title: {formData.title}</p>
       <p>Date of Study: {formData.dateStudy}</p>
