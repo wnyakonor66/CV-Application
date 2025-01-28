@@ -20,14 +20,43 @@ function Display() {
           <p>Phone: {formData.phone}</p>
         </div>
       </div>
-      <p>School: {formData.school}</p>
-      <p>Title: {formData.title}</p>
-      <p>Date of Study: {formData.dateStudy}</p>
-      <p>Company Name: {formData.companyName}</p>
-      <p>Position: {formData.position}</p>
-      <p>Responsibility: {formData.responsibility}</p>
-      <p>Date From: {formData.dateFrom}</p>
-      <p>Date To: {formData.dateTo}</p>
+      <div className="eduContainer">
+        <h1>Education</h1>
+      </div>
+      <div className="eduInfo">
+        <p>
+          <strong>School</strong>: {formData.school}
+        </p>
+        <p>
+          <strong>Title:</strong> {formData.title}
+        </p>
+        <p>
+          <strong>Date of Study: </strong>
+          {formData.dateStudy}
+        </p>
+      </div>
+
+      <div className="expContainer">
+        <h1>Experience</h1>
+      </div>
+
+      <div className="expInfo">
+        <p>
+          <strong>Company Name:</strong> {formData.companyName}
+        </p>
+        <p>
+          <strong>Position:</strong> {formData.position}
+        </p>
+        <p>
+          <strong>Responsibility</strong>: {formData.responsibility}
+        </p>
+        <p>
+          <strong>Date From:</strong> {formData.dateFrom}
+        </p>
+        <p>
+          <strong>Date To:</strong> {formData.dateTo}
+        </p>
+      </div>
     </div>
   );
 }

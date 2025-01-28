@@ -61,3 +61,22 @@
   font-weight: 600;
   word-spacing: 10px;
 }
+
+.eduContainer,
+.expContainer {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  text-shadow: 2px 2px 1px gray;
+  padding: 5px;
+}
+
+.eduInfo,
+.expInfo {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  gap: 20px;
+  margin-top: 3px;
+  padding: 20px;
+}
